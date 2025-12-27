@@ -26,8 +26,6 @@ O sistema permite:
 - Busca dinâmica
 - Persistência de dados no navegador
 
-Projeto desenvolvido com foco em **boas práticas, organização de código e experiência do usuário**, ideal para demonstração de habilidades em vagas de estágio e júnior.
-
 ---
 
 ## 🚀 Funcionalidades
