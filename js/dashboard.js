@@ -38,7 +38,7 @@ form.addEventListener("submit", async (e) => {
   mensagem.style.color = "#2563eb";
 
   try {
-    await emailjs.send("service_71ynuri", "template_s59yanr", {
+    await emailjs.send("SEU_SERVICE_ID_AQUI", "SEU_TEMPLATE_ID_AQUI", {
       email,
       token,
     });

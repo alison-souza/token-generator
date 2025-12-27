@@ -60,7 +60,7 @@ async function novoToken(id) {
   mostrarFeedback("Enviando novo token...", "loading");
 
   try {
-    await emailjs.send("service_71ynuri", "template_s59yanr", {
+    await emailjs.send("SEU_SERVICE_ID_AQUI", "SEU_TEMPLATE_ID_AQUI", {
       email: usuario.email,
       token: novo,
     });
