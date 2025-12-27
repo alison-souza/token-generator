@@ -1,7 +1,6 @@
 const form = document.getElementById("loginForm");
 const mensagem = document.getElementById("mensagem");
 
-// Se já estiver conectado
 if (localStorage.getItem("manterConectado") === "true") {
   localStorage.setItem("logado", "true");
   window.location.href = "dashboard.html";

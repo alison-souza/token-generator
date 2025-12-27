@@ -1,9 +1,7 @@
-// Proteção
 if (localStorage.getItem("logado") !== "true") {
   window.location.href = "login.html";
 }
 
-// Logout
 document.getElementById("logout").addEventListener("click", () => {
   localStorage.removeItem("logado");
   localStorage.removeItem("manterConectado");
@@ -20,7 +18,6 @@ form.addEventListener("submit", async (e) => {
 
   const email = document.getElementById("email").value.trim();
 
-  // 🔒 Validação de e-mail duplicado
   const jaExiste = usuarios.some(
     (u) => u.email.toLowerCase() === email.toLowerCase()
   );

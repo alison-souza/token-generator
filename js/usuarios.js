@@ -1,9 +1,7 @@
-// Proteção
 if (localStorage.getItem("logado") !== "true") {
   window.location.href = "login.html";
 }
 
-// Logout
 document.getElementById("logout").addEventListener("click", () => {
   localStorage.removeItem("logado");
   localStorage.removeItem("manterConectado");
@@ -17,7 +15,6 @@ const feedback = document.getElementById("feedback");
 
 let usuarios = JSON.parse(localStorage.getItem("usuarios")) || [];
 
-// 🔁 Renderização
 function renderizar(lista) {
   tabela.innerHTML = "";
 
@@ -45,13 +42,11 @@ function renderizar(lista) {
   });
 }
 
-// 🔍 Busca
 busca.addEventListener("input", () => {
   const termo = busca.value.toLowerCase();
   renderizar(usuarios.filter((u) => u.email.toLowerCase().includes(termo)));
 });
 
-// 🔁 Novo token + envio de e-mail
 async function novoToken(id) {
   const usuario = usuarios.find((u) => u.id === id);
   if (!usuario) return;
@@ -74,7 +69,6 @@ async function novoToken(id) {
   }
 }
 
-// ✏️ Editar e-mail
 function editarEmail(id) {
   const novoEmail = prompt("Digite o novo e-mail:");
   if (!novoEmail) return;
@@ -87,7 +81,6 @@ function editarEmail(id) {
   renderizar(usuarios);
 }
 
-// 🗑️ Excluir usuário
 function excluirUsuario(id) {
   if (!confirm("Deseja realmente excluir este usuário?")) return;
 
@@ -97,7 +90,6 @@ function excluirUsuario(id) {
   mostrarFeedback("Usuário removido.", "sucesso");
 }
 
-// 🧠 Utilidades
 function gerarToken(tamanho) {
   const chars =
     "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
