@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Dashboard | Gerador de Token</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="icon" href="../icons/token.png" type="image/png" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Dashboard</h1>
+
+      <nav class="menu">
+        <a href="usuarios.html">Usuários</a>
+        <button id="logout">Sair</button>
+      </nav>
+
+      <form id="tokenForm">
+        <input
+          type="email"
+          id="email"
+          placeholder="E-mail do usuário"
+          required
+        />
+        <button type="submit">Gerar Token</button>
+      </form>
+
+      <div id="mensagem"></div>
+    </div>
+
+    <!-- EmailJS -->
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+
+    <script>
+      (function () {
+        emailjs.init("WpV-LAeM53TB2dQPM");
+      })();
+    </script>
+
+    <script src="../js/dashboard.js"></script>
+
+    <footer>
+      <p>
+        Desenvolvido por <strong>Alison Souza</strong> •
+        <a href="https://github.com/alison-souza" target="_blank">GitHub</a> |
+        <a href="https://www.linkedin.com/in/alison-souza-dev/" target="_blank">
+          LinkedIn
+        </a>
+      </p>
+    </footer>
+  </body>
+</html>

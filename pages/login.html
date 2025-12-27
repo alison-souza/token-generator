@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Login | Gerador de Token</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="icon" href="../icons/token.png" type="image/png" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Login Admin</h1>
+      <p>Acesso restrito</p>
+
+      <form id="loginForm">
+        <input type="text" id="usuario" placeholder="Usuário" required />
+        <input type="password" id="senha" placeholder="Senha" required />
+        <label class="remember">
+          <input type="checkbox" id="manter" />
+          Manter conectado
+        </label>
+
+        <button type="submit">Entrar</button>
+      </form>
+
+      <div id="mensagem"></div>
+    </div>
+
+    <script src="../js/auth.js"></script>
+
+    <footer>
+      <p>
+        Desenvolvido por <strong>Alison Souza</strong> •
+        <a href="https://github.com/alison-souza" target="_blank">GitHub</a> |
+        <a href="https://www.linkedin.com/in/alison-souza-dev/" target="_blank">
+          LinkedIn
+        </a>
+      </p>
+    </footer>
+  </body>
+</html>

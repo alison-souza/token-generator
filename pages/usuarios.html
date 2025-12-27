@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Usuários | Gerador de Token</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="icon" href="../icons/token.png" type="image/png" />
+  </head>
+  <body>
+    <div id="feedback" class="feedback hidden"></div>
+
+    <div class="container container-large">
+      <h1>👥 Usuários Cadastrados</h1>
+
+      <nav class="menu">
+        <a href="dashboard.html">Dashboard</a>
+        <a href="usuarios.html">Usuários</a>
+        <button id="logout">Sair</button>
+      </nav>
+
+      <input type="text" id="busca" placeholder="Buscar por e-mail..." />
+
+      <table>
+        <thead>
+          <tr>
+            <th>E-mail</th>
+            <th>Token</th>
+            <th>Ações</th>
+          </tr>
+        </thead>
+        <tbody id="tabelaUsuarios"></tbody>
+      </table>
+
+      <p id="vazio"></p>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <script>
+      (function () {
+        emailjs.init("WpV-LAeM53TB2dQPM");
+      })();
+    </script>
+
+    <script src="../js/usuarios.js"></script>
+
+    <footer>
+      <p>
+        Desenvolvido por <strong>Alison Souza</strong> •
+        <a href="https://github.com/alison-souza" target="_blank">GitHub</a> |
+        <a href="https://www.linkedin.com/in/alison-souza-dev/" target="_blank">
+          LinkedIn
+        </a>
+      </p>
+    </footer>
+  </body>
+</html>

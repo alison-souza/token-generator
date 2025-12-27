@@ -1,0 +1,204 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  padding-bottom: 60px;
+  background: linear-gradient(135deg, #0f172a, #020617);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #e5e7eb;
+  flex-direction: column;
+}
+
+.container {
+  background: #020617;
+  padding: 30px;
+  border-radius: 12px;
+  width: 100%;
+  max-width: 400px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
+  text-align: center;
+}
+
+h1 {
+  margin-bottom: 25px;
+}
+
+p {
+  margin-bottom: 20px;
+  font-size: 0.9rem;
+  color: #cbd5f5;
+}
+
+input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  border: none;
+  background: #facc15;
+  color: #020617;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #eab308;
+}
+
+.menu {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.menu a,
+.menu button {
+  flex: 1;
+  text-decoration: none;
+  background: #1e293b;
+  color: #e5e7eb;
+  padding: 10px;
+  border-radius: 8px;
+  font-size: 0.85rem;
+  text-align: center;
+  border: none;
+  cursor: pointer;
+}
+
+.menu a:hover,
+.menu button:hover {
+  background: #334155;
+}
+
+.card {
+  background: #020617;
+  border: 1px solid #1e293b;
+  padding: 12px;
+  border-radius: 8px;
+  margin-top: 10px;
+  font-size: 0.85rem;
+}
+
+.card button {
+  margin-top: 5px;
+  font-size: 0.75rem;
+}
+
+.remember {
+  display: flex;
+  align-items: center; /* garante alinhamento vertical */
+  gap: 8px;
+  font-size: 0.85rem;
+  color: #cbd5f5;
+  margin-bottom: 15px;
+  margin-top: 1px;
+  cursor: pointer;
+  line-height: 1; /* 🔑 isso resolve o “desnível” */
+}
+
+.remember input {
+  width: auto;
+  position: relative;
+  top: 6px;
+}
+
+.container-large {
+  max-width: 700px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+  font-size: 0.85rem;
+}
+
+th,
+td {
+  padding: 10px;
+  border-bottom: 1px solid #1e293b;
+  text-align: left;
+}
+
+th {
+  color: #facc15;
+  font-weight: bold;
+}
+
+tr:hover {
+  background: #020617;
+}
+
+td button {
+  padding: 6px 8px;
+  font-size: 0.7rem;
+}
+
+td button + button {
+  margin-top: 6px; /* espaçamento pequeno e elegante */
+}
+
+.feedback {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  padding: 12px 18px;
+  border-radius: 6px;
+  font-weight: 500;
+  z-index: 1000;
+}
+
+.feedback.sucesso {
+  background: #16a34a;
+  color: #fff;
+}
+
+.feedback.erro {
+  background: #dc2626;
+  color: #fff;
+}
+
+.feedback.loading {
+  background: #2563eb;
+  color: #fff;
+}
+
+.hidden {
+  display: none;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 10px;
+  text-align: center;
+  font-size: 0.75rem;
+  color: #94a3b8;
+}
+
+footer a {
+  color: #facc15;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
